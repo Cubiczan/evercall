@@ -1,0 +1,22 @@
+{
+  "name": "evercall",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Daily AI voice calls for elderly parents, with a wellbeing radar for families. Built for the AssemblyAI Voice Agent Hackathon (Sep 2026).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.6.0"
+  }
+}

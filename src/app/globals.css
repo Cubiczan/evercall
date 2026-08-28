@@ -1,0 +1,163 @@
+/* EverCall design tokens — warm, calm, high-contrast. Teal = signal, amber = warmth. */
+:root {
+  --bg: #0b1f26;
+  --bg-soft: #0f2830;
+  --card: #123039;
+  --card-edge: #1d4652;
+  --ink: #eaf4f2;
+  --muted: #9db8b3;
+  --teal: #2dd4bf;
+  --amber: #fbbf24;
+  --coral: #f87171;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand span {
+  color: var(--amber);
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.card h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.pill.positive { background: rgba(45, 212, 191, 0.15); color: var(--teal); }
+.pill.warning  { background: rgba(251, 191, 36, 0.15); color: var(--amber); }
+.pill.urgent   { background: rgba(248, 113, 113, 0.15); color: var(--coral); }
+
+.big-stat {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.kv {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px dashed var(--card-edge);
+  padding-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.kv .k { color: var(--muted); }
+.kv .v { font-weight: 700; }
+.kv .v.ok { color: var(--teal); }
+.kv .v.warn { color: var(--amber); }
+
+.alert {
+  border-left: 3px solid var(--teal);
+  padding: 0.6rem 0.9rem;
+  background: var(--bg-soft);
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
+.alert.warning { border-left-color: var(--amber); }
+.alert.urgent  { border-left-color: var(--coral); }
+
+.alert .when {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+button.cta {
+  background: var(--teal);
+  color: #052e2b;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.06s ease, filter 0.15s ease;
+  width: fit-content;
+}
+
+button.cta:hover  { filter: brightness(1.08); }
+button.cta:active { transform: scale(0.98); }
+button.cta:disabled { opacity: 0.6; cursor: wait; }
+
+.footnote {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.cta { transition: none; }
+}
