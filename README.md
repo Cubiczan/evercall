@@ -60,14 +60,14 @@ Read the deep dives:
 
 ## 🎬 Demo
 
-> 🎥 **3-minute demo video:** _link drops here at submission_ — script lives in the [`evercall-pitch`](https://github.com/evercall-team/evercall-pitch) repo.
+> 🎥 **3-minute demo video:** _link drops here at submission_ — script lives in the [`evercall-pitch`](https://github.com/Cubiczan/evercall-pitch) repo.
 
 The demo mode runs **fully in the browser**: press *Trigger test call*, a simulated "grandma" (pre-recorded voice) chats with the agent, and you watch the radar light up — no phone number required. Real PSTN calls via Twilio Media Streams are the stretch goal.
 
 ## 🚀 Quickstart
 
 ```bash
-git clone https://github.com/evercall-team/evercall.git
+git clone https://github.com/icohangar-ops/evercall.git
 cd evercall
 npm install
 cp .env.example .env.local   # paste your AssemblyAI key
@@ -133,7 +133,7 @@ Month-long hackathon → 4 weekly milestones. Full detail in [`docs/BUILD_PLAN.m
 | 🔌 Full-stack #3 | LeMUR analysis, alerts, integrations |
 | 🧭 Founder / PM | Product, demo video, submission, this README |
 
-> 🤝 **We're recruiting 3 full-stack devs** (React/Next.js + API glue) — see our lablab team page or the [pitch repo](https://github.com/evercall-team/evercall-pitch) for the vibe.
+> 🤝 **We're recruiting 3 full-stack devs** (React/Next.js + API glue) — see our lablab team page or the [pitch repo](https://github.com/Cubiczan/evercall-pitch) for the vibe.
 
 ## 🙏 Thanks
 
